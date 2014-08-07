@@ -11,40 +11,28 @@
 <div class="row">
 <div class="span9">
 
-		<section id="eventHandlers">
-		<div class="page-header">
-			<h2>
-			Software Expertise
-			</h2>
-		</div>
-		<p>
-			<ul>
-				<li>More than 15 years CFML experience</li>
-				<li>Oracle, MySQL and MS SQL Server</li>
-				<li>MVC frameworks such as CFWheels and ColdBox</li>
-				<li>jQuery and Ajax</li>
-			</ul>
-		</p>
-		<p></p>
-		<div class="page-header">
+		<section id="WhatIDo">
+		
+		
 			<h2>
 			Domain Expertise
 			</h2>
-		</div>
-		<p>
-		</p><ul>
+		
+		<ul>
+			<li>18 years experience in software and IT industries</li>
+			<li>Online since 1993</li>
 			<li>9 years eProcurement expertise</li>
+			<li>Private/Public sectors, NHS and Higher Education</li>
 			<li>Business Intelligence</li>
 			<li>XML Integration</li>
 		</ul>
-		<p></p>
-		<div class="page-header">
+		
+		
 			<h2>
-			Development Expertise
+			Technical Management Expertise
 			</h2>
-		</div>
-		<p>
-		</p><ul>
+		
+		<ul>
 			<li>5 years Agile software development experience</li>
 			<li>Certified ScrumMaster</li>
 			<li>Significant line management experience as a Development Manager</li>
@@ -52,7 +40,21 @@
 			<li>Technical recruitment</li>
 			<li>Product Owner</li>
 		</ul>
-		<p></p>
+		
+		
+			<h2>
+			Software Expertise
+			</h2>
+		
+		
+			<ul>
+				<li>More than 15 years CFML experience</li>
+				<li>Oracle, MySQL and MS SQL Server</li>
+				<li>MVC frameworks such as CFWheels and ColdBox</li>
+				<li>jQuery and Ajax</li>
+			</ul>
+		
+		
 		</section>
 
 	
