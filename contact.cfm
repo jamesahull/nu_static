@@ -4,7 +4,7 @@
 	<cfelse>
 		<cfif isValid("email", form.yourEmail)>
 		<cfquery name="q">
-				insert into contactrequests (email, message, datesubmitted) VALUES
+				insert into northern_aliweb.contactrequests (email, message, datesubmitted) VALUES
 					(<cfqueryparam value="#form.yourEmail#" cfsqltype="cf_sql_varchar">,
 					<cfqueryparam value="#form.details#" cfsqltype="cf_sql_varchar">,
 					<cfqueryparam value="#now()#" cfsqltype="cf_sql_date">)
