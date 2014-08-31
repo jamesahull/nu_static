@@ -70,4 +70,15 @@
 	</cfoutput>
 		
 	</div>
+<script type="text/javascript">
+$(function(){
+	$(".confirm").click(function(){
+		var alert = confirm("Are you sure you want to delete this post?");
+		if(!alert){
+			return false;}
+	});
+});
+
+</script>
 <cfinclude template="admin_footer.cfm">
+

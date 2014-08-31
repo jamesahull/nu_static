@@ -156,10 +156,7 @@
 	<cffunction name="postButtonHTML" returntype="String">
 		<cfargument name="postid" type="numeric" required="true">
 		<cfset var type = getThisPostType(postid)>
-		<cfset var HTML = '<a href="post.cfm?postid=' & postid & '">View</a>' />
-		<cfif type eq 'R'>
-			<cfset HTML = HTML & ' | <a href="post_approve.cfm?postid=' & postid & '">Approve</a>' />
-		</cfif>
+		<cfset var HTML = '<a href="post.cfm?postid=' & postid & '">View</a> | <a class="confirm" href="post_delete.cfm?postId=' & postid & '">Delete</a>' />
 		<cfreturn HTML />
 	</cffunction>
 
@@ -221,5 +218,14 @@
 		</cfquery>
 
 
+	</cffunction>
+
+	<cffunction name="deletePost" returntype="void" >
+		<cfargument name="postId">
+
+		<cfquery name="q">
+			delete from northern_aliweb.posts where id = <cfqueryparam value="#postId#" cfsqltype="cf_sql_numeric">
+				
+		</cfquery>
 	</cffunction>
 </cfcomponent>

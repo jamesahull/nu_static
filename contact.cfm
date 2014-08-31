@@ -9,6 +9,11 @@
 					<cfqueryparam value="#form.details#" cfsqltype="cf_sql_varchar">,
 					<cfqueryparam value="#now()#" cfsqltype="cf_sql_date">)
 			</cfquery>	
+
+			<cfmail to="james@northern-union.com" from="Registration from site <info@northern-union.com>" subject="User Registered">User #form.yourEmail# just registered and said:
+
+#form.details#
+			</cfmail>
 		<cfelse>
 			<cfset msg = "Invalid Email address!" />		
 		</cfif>

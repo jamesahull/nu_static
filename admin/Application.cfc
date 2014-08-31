@@ -2,8 +2,8 @@
 	<cfset This.name = "NorthernUnionAdmin">
 	<cfset this.loginstorage="session">
 	<cfset this.sessionmanagement = 'true'>
-
-<cfset this.datasource = "northern_core">
+	
+<cfset this.datasource = "northern_aliweb">
 
 <cffunction name="onmissingtemplate">
 	<cflocation url="../404.cfm">
@@ -16,7 +16,7 @@
 			<cfabort>
 		<cfelse>
 			<cfquery name="q">
-				select loginid, roles from users 
+				select loginid, roles from northern_aliweb.adminusers 
 				where loginid = <cfqueryparam value="#cflogin.name#" cfsqltype="cf_sql_varchar">
 				and pwd = <cfqueryparam value="#cflogin.password#" cfsqltype="cf_sql_varchar">
 			</cfquery>
